@@ -5,7 +5,6 @@ import {
   HttpClientModule,
 } from '@angular/common/http';
 import { NgModule, Optional, SkipSelf } from '@angular/core';
-import { LayoutModule } from '../layouts/layout.module';
 import { AuthModule } from './auth/auth.module';
 import { AuthInterceptorService } from './auth/helpers/auth-interceptor';
 import { ErrorInterceptor } from './auth/helpers/error-interceptor';
@@ -14,7 +13,7 @@ import { JwtInterceptor } from './auth/helpers/jwt-interceptor';
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule, AuthModule, LayoutModule],
+  imports: [CommonModule, AuthModule],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: FakeBackend, multi: true },

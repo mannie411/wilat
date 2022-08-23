@@ -5,12 +5,8 @@ import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { AdminLayoutModule } from './admin-layout/admin-layout.module';
 import { AuthLayoutModule } from './auth-layout/auth-layout.module';
 
-// Layout Components
-import { AdminLayoutComponent } from './admin-layout/admin-layout.component';
-import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
-
 @NgModule({
-  declarations: [AdminLayoutComponent, AuthLayoutComponent],
+  declarations: [],
   exports: [],
   imports: [CommonModule, AdminLayoutModule, AuthLayoutModule],
   providers: [],
