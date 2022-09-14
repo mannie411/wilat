@@ -17,7 +17,7 @@ import { LayoutModule } from './layouts/layout.module';
     AppInitializationModule,
     HttpClientModule,
     CoreModule,
-    LayoutModule,
+    // LayoutModule,
     SharedModule,
     ViewsModule,
   ],

@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
+import { DashboardLayoutComponent } from './layouts/dashboard-layout/dashboard-layout.component';
+import { BaseLayoutComponent } from './layouts/base-layout/base-layout.component';
 import { ErrorPageComponent } from './views/error-page/error-page.component';
 
 const routes: Routes = [
@@ -15,26 +15,26 @@ const routes: Routes = [
   },
   {
     path: '',
-    component: AdminLayoutComponent,
+    component: DashboardLayoutComponent,
     children: [
       {
         path: '',
         loadChildren: () =>
-          import('src/app/layouts/admin-layout/admin-layout.module').then(
-            (m) => m.AdminLayoutModule
+          import('@/app/layouts/dashboard-layout/dashboard-layout.module').then(
+            (m) => m.DashboardLayoutModule
           ),
       },
     ],
   },
   {
     path: '',
-    component: AuthLayoutComponent,
+    component: BaseLayoutComponent,
     children: [
       {
         path: '',
         loadChildren: () =>
-          import('src/app/layouts/auth-layout/auth-layout.module').then(
-            (m) => m.AuthLayoutModule
+          import('@/app/layouts/base-layout/base-layout.module').then(
+            (m) => m.BaseLayoutModule
           ),
       },
     ],

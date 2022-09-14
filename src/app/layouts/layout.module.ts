@@ -2,13 +2,13 @@ import { CommonModule } from '@angular/common';
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 
 // Layout Modules
-import { AdminLayoutModule } from './admin-layout/admin-layout.module';
-import { AuthLayoutModule } from './auth-layout/auth-layout.module';
+import { DashboardLayoutModule } from './dashboard-layout/dashboard-layout.module';
+import { BaseLayoutModule } from './base-layout/base-layout.module';
 
 @NgModule({
   declarations: [],
   exports: [],
-  imports: [CommonModule, AdminLayoutModule, AuthLayoutModule],
+  imports: [CommonModule, DashboardLayoutModule, BaseLayoutModule],
   providers: [],
 })
 export class LayoutModule {

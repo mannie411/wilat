@@ -4,17 +4,17 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { AdminLayoutRoutes } from './admin-layout.routing';
-import { AdminLayoutComponent } from './admin-layout.component';
+import { DashboardLayoutRoutes } from './dashboard-layout.routing';
+import { DashboardLayoutComponent } from './dashboard-layout.component';
 
 @NgModule({
-  declarations: [AdminLayoutComponent],
+  declarations: [DashboardLayoutComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(AdminLayoutRoutes),
+    RouterModule.forChild(DashboardLayoutRoutes),
     FormsModule,
     HttpClientModule,
   ],
   exports: [RouterModule],
 })
-export class AdminLayoutModule {}
+export class DashboardLayoutModule {}
