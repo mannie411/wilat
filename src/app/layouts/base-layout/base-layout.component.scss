@@ -1,0 +1,13 @@
+@use "../../../assets/styles/variables" as *;
+
+.header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.base {
+  background-color: $bg-primary;
+}
+
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}

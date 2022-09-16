@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 
+//Modules
+import { SharedModule } from '@/app/shared';
+
+// Components
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { MembersComponent } from './dashboard/members/members.component';
 import { SigninComponent } from './base/signin/signin.component';
@@ -16,6 +20,6 @@ import { MembershipComponent } from './base/membership/membership.component';
     ErrorPageComponent,
     MembershipComponent,
   ],
-  imports: [],
+  imports: [SharedModule],
 })
 export class ViewsModule {}

@@ -1,5 +1,5 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
-import { ROUTES } from '../sidebar/sidebar.component';
+import { ROUTES } from '../../sidebar/sidebar.component';
 import {
   Location,
   LocationStrategy,
@@ -8,11 +8,11 @@ import {
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss'],
+  selector: 'app-base-header',
+  templateUrl: './base.component.html',
+  styleUrls: ['./base.component.scss'],
 })
-export class NavbarComponent implements OnInit {
+export class BaseComponent implements OnInit {
   public focus: any;
   public listTitles: any[] = [];
   public location: Location;

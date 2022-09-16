@@ -1,5 +1,19 @@
-<app-header></app-header>
-<main class="base">
+<header class="header">
+    <div class="container flex justify-between">
+
+        <div class="logo">
+            <a class="logo-link" routerLinkActive="active" [routerLink]="['/']">
+                <img class="logo-img" src="assets/img/logo.png" alt="" srcset="">
+                <span>WILAT</span>
+            </a>
+        </div>
+
+        <app-base-header></app-base-header>
+    </div>
+</header>
+
+<main class="base layout">
     <router-outlet></router-outlet>
 </main>
+
 <app-footer></app-footer>

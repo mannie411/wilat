@@ -3,24 +3,24 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 // Components
-import { HeaderComponent } from './header/header.component';
+
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { BaseComponent, DashboardComponent } from './nav';
 
 @NgModule({
   imports: [CommonModule, RouterModule],
   declarations: [
     FooterComponent,
-    HeaderComponent,
-    NavbarComponent,
     SidebarComponent,
+    BaseComponent,
+    DashboardComponent,
   ],
   exports: [
     FooterComponent,
-    HeaderComponent,
-    NavbarComponent,
     SidebarComponent,
+    BaseComponent,
+    DashboardComponent,
   ],
 })
 export class ComponentsModule {}

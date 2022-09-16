@@ -7,6 +7,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardLayoutRoutes } from './dashboard-layout.routing';
 import { DashboardLayoutComponent } from './dashboard-layout.component';
 
+import { SharedModule } from '@/app/shared';
+
 @NgModule({
   declarations: [DashboardLayoutComponent],
   imports: [
@@ -14,6 +16,7 @@ import { DashboardLayoutComponent } from './dashboard-layout.component';
     RouterModule.forChild(DashboardLayoutRoutes),
     FormsModule,
     HttpClientModule,
+    SharedModule,
   ],
   exports: [RouterModule],
 })

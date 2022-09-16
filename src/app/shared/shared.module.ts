@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// Modules
 import { ComplexModule } from './components/complex-component-example/complex.module';
 import { ComponentsModule } from './components/components.module';
 // Components

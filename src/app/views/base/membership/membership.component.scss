@@ -1,0 +1,27 @@
+@use "../../../../assets/styles/variables" as *;
+
+.membership {
+  padding-block: 8rem;
+  padding-inline: 14rem;
+  .form-container {
+    background-color: $white;
+    box-shadow: $box-shadow-2;
+    border-radius: $border-radius-5;
+    max-width: 94rem;
+    margin-block: auto;
+    .bg-pattern {
+      background: url("/assets/img/pattern.png") no-repeat center center;
+      background-size: cover;
+      width: 40%;
+    }
+    .form {
+      padding-block: 1.45rem;
+      .form-btn {
+        margin-block: 2.5rem;
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
