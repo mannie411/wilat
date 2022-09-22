@@ -1,0 +1,17 @@
+.layout {
+  position: sticky;
+  z-index: 10;
+  .wrapper {
+    padding-block: 4rem;
+    .cards {
+      margin-top: -6rem;
+      .card {
+        .title {
+        }
+        .body {
+          min-height: 8rem;
+        }
+      }
+    }
+  }
+}

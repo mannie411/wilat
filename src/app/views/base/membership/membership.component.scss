@@ -14,12 +14,15 @@
       background-size: cover;
       width: 40%;
     }
-    .form {
-      padding-block: 1.45rem;
-      .form-btn {
-        margin-block: 2.5rem;
-        .btn {
-          width: 100%;
+    .wizard {
+      padding-inline: 1rem;
+      .form {
+        padding-block: 1.45rem;
+        .form-btn {
+          margin-block: 2.5rem;
+          .btn {
+            width: 100%;
+          }
         }
       }
     }

@@ -1,0 +1,14 @@
+<div *ngIf="(steps | async) as s">
+    <div class="form-steps-container">
+
+        <div class="container flex" *ngFor="let step of s; let i = index;">
+            <div (click)="onStepClick(step)"
+                [ngClass]="{ 'step-complete': step.isComplete, 'step-incomplete': !step.isComplete, 'step-current': (currentStep | async)?.stepIndex === step.stepIndex }"
+                class="step-bubble">{{ step.stepIndex }}
+            </div>
+
+            <div *ngIf="i < s.length - 1" class="step-divider"></div>
+        </div>
+    </div>
+
+</div>

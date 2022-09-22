@@ -23,9 +23,7 @@ export class AppComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
-    this.http
-      .get(`${APP_CONFIG.apiBaseUrl}/users`)
-      .subscribe((users) => console.log(`users fetched`));
+    this.http.get(`${APP_CONFIG.apiBaseUrl}/users`).subscribe((users) => {});
 
     this.routeSub = this.router.events
       .pipe(

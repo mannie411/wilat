@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 //Modules
 import { SharedModule } from '@/app/shared';
@@ -20,6 +21,6 @@ import { MembershipComponent } from './base/membership/membership.component';
     ErrorPageComponent,
     MembershipComponent,
   ],
-  imports: [SharedModule],
+  imports: [SharedModule, CommonModule],
 })
 export class ViewsModule {}

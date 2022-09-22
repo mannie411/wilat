@@ -211,6 +211,13 @@
 .ph {
 }
 
+.card {
+  background-color: $white;
+  box-shadow: 0px 4px 30px rgba(6, 25, 69, 0.05);
+  border-radius: 0.75rem;
+  padding: 2rem;
+}
+
 #app {
   position: relative;
   height: 100%;
@@ -251,6 +258,13 @@
 }
 
 .header {
+  position: fixed;
+  background: transparent;
+  bottom: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
   .navbar {
     height: 100%;
     ul {
