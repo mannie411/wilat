@@ -121,3 +121,14 @@ h4 {
 p {
   line-height: 1.6rem;
 }
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}

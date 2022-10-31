@@ -11,6 +11,7 @@ import { SigninComponent } from './base/signin/signin.component';
 import { RegisterComponent } from './base/register/register.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { MembershipComponent } from './base/membership/membership.component';
+import { Angular4PaystackModule } from '../features/payment/angular4-paystack.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,6 @@ import { MembershipComponent } from './base/membership/membership.component';
     ErrorPageComponent,
     MembershipComponent,
   ],
-  imports: [SharedModule, CommonModule],
+  imports: [SharedModule, CommonModule, Angular4PaystackModule],
 })
 export class ViewsModule {}

@@ -1,0 +1,95 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.75rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.receipt {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.reciept-info {
+  display: flex;
+  justify-content: center;
+  margin-block: 1rem;
+}
+
+.reciept-info .badge {
+  background-color: rgba(179, 142, 94, 0.75);
+  color: rgba(255, 255, 255, 1);
+  font-family: 500;
+  letter-spacing: 0.65rem;
+  padding: 0.45rem 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reciept-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.text {
+  color: rgba(179, 142, 94, 1);
+  text-align: center;
+}
+
+.text h1 {
+  color: rgba(53, 17, 99, 1);
+}
+
+.text p {
+  font-weight: 600;
+}
+
+.text .sub {
+  text-transform: uppercase;
+}
+
+.reciept-sub-header {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 1rem;
+}
+
+.heading,
+.signature {
+  margin-block: 1rem;
+  padding: 0.3rem 0.5rem;
+}
+
+.heading {
+  background-color: rgba(179, 142, 94, 0.75);
+  color: rgba(255, 255, 255, 1);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tr > * {
+  padding: 0.3rem 0.5rem;
+}
+
+.tr:not(.alt) > * {
+  background: rgba(238, 238, 238, 0.5);
+}
+
+.tr > :last-child {
+  text-align: right;
+}

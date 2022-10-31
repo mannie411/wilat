@@ -12,6 +12,17 @@ $bg-primary: rgba(248, 249, 251, 1);
 $bg-2: rgba(65, 60, 115, 0.76);
 $bg-3: rgba(40, 39, 94, 1);
 
+$bs-table-color: #67748e;
+$bs-table-bg: transparent;
+$bs-table-border-color: #e9ecef;
+$bs-table-accent-bg: transparent;
+$bs-table-striped-color: #67748e;
+$bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+$bs-table-active-color: #67748e;
+$bs-table-active-bg: rgba(0, 0, 0, 0.1);
+$bs-table-hover-color: #67748e;
+$bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+
 // Font/Padding/Marging Size
 
 $s-0: 0;
@@ -30,3 +41,9 @@ $box-shadow-2: 0px 10px 50px -5px rgba(0, 0, 0, 0.1);
 
 $border-radius-5: 5px;
 $border-radius-50: 50%;
+
+$checkbox-blank: 'data:image/svg+xml;utf8,<svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" ><g><path fill="none" d="M0 0h24v24H0z"/><path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v14h14V5H5z" style="fill:#f7a42b"/></g></svg>';
+$checkbox-check: 'data:image/svg+xml;utf8,<svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"/><path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm7.003 13l7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16z" style="fill:#f7a42b"/></g></svg>';
+
+$radio-blank: "data:image/svg+xml;utf8,";
+$radio-check: "data:image/svg+xml;utf8,";

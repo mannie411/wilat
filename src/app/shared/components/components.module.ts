@@ -9,7 +9,6 @@ import { FooterComponent } from './footer/footer.component';
 import { BaseComponent, DashboardComponent } from './nav';
 import { AppbarComponent } from './appbar/appbar.component';
 import { StepsComponent } from './steps/steps.component';
-import { StepsContainerComponent } from './steps-container/steps-container.component';
 
 @NgModule({
   imports: [CommonModule, RouterModule],
@@ -20,7 +19,6 @@ import { StepsContainerComponent } from './steps-container/steps-container.compo
     DashboardComponent,
     AppbarComponent,
     StepsComponent,
-    StepsContainerComponent,
   ],
   exports: [
     FooterComponent,
@@ -29,7 +27,6 @@ import { StepsContainerComponent } from './steps-container/steps-container.compo
     AppbarComponent,
     DashboardComponent,
     StepsComponent,
-    StepsContainerComponent,
   ],
 })
 export class ComponentsModule {}

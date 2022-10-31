@@ -6,6 +6,7 @@ import { ComplexModule } from './components/complex-component-example/complex.mo
 import { ComponentsModule } from './components/components.module';
 // Components
 import { SimpleComponent } from './components/simple-component-example/simple.component';
+import { PopupDirective } from './directives/popup.directive';
 
 const EXPORT_COMPONENTS = [SimpleComponent];
 
@@ -13,10 +14,12 @@ const PIPES: never[] = [];
 
 const MODULES = [ComplexModule, ComponentsModule];
 
+const DIRECTIVES = [PopupDirective];
+
 @NgModule({
-  declarations: [...EXPORT_COMPONENTS, ...PIPES],
+  declarations: [...EXPORT_COMPONENTS, ...PIPES, ...DIRECTIVES],
   imports: [CommonModule, FormsModule, ReactiveFormsModule, ...MODULES],
-  exports: [...EXPORT_COMPONENTS, ...PIPES, ...MODULES],
+  exports: [...EXPORT_COMPONENTS, ...PIPES, ...MODULES, ...DIRECTIVES],
   entryComponents: [],
   providers: [],
 })
