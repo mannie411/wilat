@@ -1,1 +1,276 @@
-<p>membership works!</p>
+<section class="membership">
+    <div class="container">
+        <div class="form-container flex">
+            <div class="bg-pattern"></div>
+            <div class="wizard">
+                <app-steps></app-steps>
+                <form class="form">
+                    <div [ngSwitch]="currentStep?.stepIndex">
+                        <!-- Step One -->
+                        <div class="step-one" *ngSwitchCase="'1'">
+                            <h4>SECTION A: BIO DATA </h4>
+                            <p>Please fill all text input using capitalized letter.</p>
+                            <div class="inner-step">
+                                <div class="s1group-1">
+                                    <div class="form-group">
+                                        <label>Title:</label>
+                                        <div class="flex gap">
+                                            <label for="miss" class="check">
+                                                <input type="checkbox" name="" id="miss">
+                                                <span class="checkbox"></span>
+                                                <span class="label">MISS.</span>
+                                            </label>
+
+                                            <label for="mrs" class="check">
+                                                <input type="checkbox" name="" id="mrs">
+                                                <span class="checkbox"></span>
+                                                <span class="label">MRS.</span>
+                                            </label>
+
+                                            <label for="prof" class="check">
+                                                <input type="checkbox" name="" id="prof">
+                                                <span class="checkbox"></span>
+                                                <span class="label">PROF.</span>
+                                            </label>
+
+                                            <label for="dr" class="check">
+                                                <input type="checkbox" name="" id="dr">
+                                                <span class="checkbox"></span>
+                                                <span class="label">DR.</span>
+                                            </label>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s1FName">FULL NAME:</label>
+                                        <input type="text" name="" id="s1FName"
+                                            placeholder="(SURNAME FIRSTNAME MIDDLE NAME)">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s1Email">Email:</label>
+                                        <input type="email" name="" id="s1Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s1Addr">RESIDENTIAL ADDRESS:</label>
+                                        <input type="text" name="" id="s1Addr">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s1Num">MOBILE NO:</label>
+                                        <input type="text" name="" id="s1Num">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s1Dob">DATE OF BIRTH:</label>
+                                        <input type="date" name="" id="s1Dob">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s1PB">PLACE OF BIRTH:</label>
+                                        <input type="text" name="" id="s1PB">
+                                    </div>
+                                </div>
+                                <!-- <div class="s1group-2">
+                                    <div class="form-group">
+                                        <label for="s1NK">NEXT OF KIN:</label>
+                                        <input type="text" name="" id="s1NK">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>MARITAL STATUS :</label>
+                                        <div>
+                                            <label for="s1Single" class="check">
+                                                SINGLE.
+                                                <input type="checkbox" name="" id="s1Single">
+                                            </label>
+                                            <label for="s1Married" class="check">
+                                                MARRIED
+                                                <input type="checkbox" name="" id="s1Married">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s1Nat">NATIONALITY:</label>
+                                        <input type="text" name="" id="s1Nat">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s1Soo">STATE OF ORIGIN:</label>
+                                        <input type="text" name="" id="s1Soo">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s1Lga">L.G.A:</label>
+                                        <input type="text" name="" id="s1Lga">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s1OrgC">ORGANIZATION/COMPANY NAME :</label>
+                                        <input type="text" name="" id="s1OrgC">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s1OffAddr">OFFICE ADDRESS:</label>
+                                        <input type="text" name="" id="s1OffAddr">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s1OffNum">OFFICE PHONE NO:</label>
+                                        <input type="text" name="" id="s1OffNum">
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <!-- Step Two -->
+                        <div class="step-two" *ngSwitchCase="'2'">
+                            <h4>SECTION B: REFERRENCE </h4>
+                            <p>Please fill all text input using capitalized letter.</p>
+                            <div class="inner-step">
+                                <div class="s2group-1">
+                                    <div class="form-group">
+                                        <label>Title:</label>
+                                        <div class="flex gap">
+                                            <label for="s2Miss" class="check">
+                                                <input type="checkbox" name="" id="s2Miss">
+                                                <span class="checkbox"></span>
+                                                <span class="label">MISS.</span>
+                                            </label>
+                                            <label for="s2Mrs" class="check">
+                                                <input type="checkbox" name="" id="s2Mrs">
+                                                <span class="checkbox"></span>
+                                                <span class="label"> MRS.</span>
+                                            </label>
+                                            <label for="s2Prof" class="check">
+                                                <input type="checkbox" name="" id="s2Prof">
+                                                <span class="checkbox"></span>
+                                                <span class="label">PROF.</span>
+                                            </label>
+                                            <label for="s2Dr" class="check">
+                                                <input type="checkbox" name="" id="s2Dr">
+                                                <span class="checkbox"></span>
+                                                <span class="label">DR.</span>
+                                            </label>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s2FName">FULL NAME:</label>
+                                        <input type="text" name="" id="s2FName"
+                                            placeholder="(SURNAME FIRSTNAME MIDDLE NAME)">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s2Email">Email:</label>
+                                        <input type="email" name="" id="s2Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s2Addr">RESIDENTIAL ADDRESS:</label>
+                                        <input type="text" name="" id="s2Addr">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s2Num">MOBILE NO:</label>
+                                        <input type="text" name="" id="s2Num">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>MARITAL STATUS :</label>
+                                        <div class="flex gap">
+                                            <label for="s2Single" class="check">
+                                                <input type="checkbox" name="" id="s2Single">
+                                                <span class="checkbox"></span>
+                                                <span class="label">SINGLE.</span>
+                                            </label>
+                                            <label for="s2Married" class="check">
+                                                <input type="checkbox" name="" id="s2Married">
+                                                <span class="checkbox"></span>
+                                                <span class="label">MARRIED</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="s2group-2">
+                                    <div class="form-group">
+                                        <label for="s2Rel">RELATIONSHIP:</label>
+                                        <input type="text" name="" id="s2Rel">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s2Nat">NATIONALITY:</label>
+                                        <input type="text" name="" id="s2Nat">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s2Soo">STATE OF ORIGIN:</label>
+                                        <input type="text" name="" id="s2Soo">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s2Lga">L.G.A:</label>
+                                        <input type="text" name="" id="s2Lga">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s2OrgC">ORGANIZATION/COMPANY NAME :</label>
+                                        <input type="text" name="" id="s2OrgC">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s2OffAddr">OFFICE ADDRESS:</label>
+                                        <input type="text" name="" id="s2OffAddr">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="s2OffNum">OFFICE PHONE NO:</label>
+                                        <input type="text" name="" id="s2OffNum">
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+
+                        <!-- Step Three -->
+                        <div class="step-three" *ngSwitchCase="'3'">
+                            <h4>SECTION C: MEMBERSHIP AGREEMENT</h4>
+                            <div class="form-group">
+                                <label for="s3Sign">Upload Signature and Date:</label>
+                                <input type="file" name="" id="s3Sign">
+                            </div>
+                            <div class="form-group">
+                                <label for="s3PassP">Upload Passport Photograph:</label>
+                                <input type="file" name="" id="s3PassP">
+                            </div>
+
+                            <div>
+                                <label for="agree" class="check">
+                                    <input type="checkbox" name="agree" id="agree">
+                                    <span class="checkbox"></span>
+                                    <span class="label">
+                                        I hereby choose to accept the terms and conditions of being a member of WILAT
+                                        Nigeria
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-btn flex justify-between">
+                        <button class="btn btn-secondary" [hidden]="currentStep?.stepIndex === 1 ? true : false"
+                            (click)="onPrevStep($event)" type="button">
+                            Previous
+                        </button>
+
+                        <div>
+
+                            <angular4-paystack [hidden]="currentStep?.stepIndex === 3 ? false : true"
+                                [class]="'btn btn-primary m-3'" [email]="'mailexample@mail.com'"
+                                (paymentInit)="paymentInit()" [amount]="5000000" [ref]="tRef"
+                                (onClose)="paymentCancel()" (callback)="paymentDone($event)" [class]="'btn btn-primary'"
+                                [paystackOptions]="options">
+                                Pay via Paystack
+                            </angular4-paystack>
+                            <!-- <button class="btn btn-primary" angular4-paystack [paystackOptions]="options" (onClose)="paymentCancel()"
+                                (paymentInit)="paymentInit()" (callback)="paymentDone($event)" [class]="'btn btn-primary btn-lg'">
+                                Pay With Paystack Directive
+                            </button> -->
+                            <button class="btn" [hidden]="currentStep?.stepIndex === 3 ? true : false" [ngClass]="{'btn-secondary': !currentStep?.isComplete,
+                            'btn-primary': currentStep?.isComplete}" (click)="onNextStep($event)"
+                                [type]="currentStep?.isComplete ? 'submit': 'button'">
+                                {{ showButtonLabel() }}
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</section>

@@ -1,1 +1,5 @@
-@import "./app/app.component";
+@use "./assets/styles/reset";
+@use "./assets/styles/app";
+
+@use "./app/layouts/layouts";
+@use "./app/views/views";

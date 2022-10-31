@@ -8,6 +8,7 @@ import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { ViewsModule } from './views/views.module';
 import { LayoutModule } from './layouts/layout.module';
+import { Angular4PaystackModule } from './features/payment/angular4-paystack.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,6 +21,9 @@ import { LayoutModule } from './layouts/layout.module';
     // LayoutModule,
     SharedModule,
     ViewsModule,
+    Angular4PaystackModule.forRoot(
+      'pk_test_34e1d1b3cfede21ffcb8143bed51d406e4c80668'
+    ),
   ],
   providers: [],
   bootstrap: [AppComponent],

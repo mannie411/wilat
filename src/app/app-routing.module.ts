@@ -6,11 +6,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardLayoutComponent } from './layouts/dashboard-layout/dashboard-layout.component';
 import { BaseLayoutComponent } from './layouts/base-layout/base-layout.component';
 import { ErrorPageComponent } from './views/error-page/error-page.component';
+import { RecieptComponent } from './features/reciept/reciept.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'dashboard',
+    redirectTo: 'membership',
     pathMatch: 'full',
   },
   {
@@ -38,6 +39,10 @@ const routes: Routes = [
           ),
       },
     ],
+  },
+  {
+    path: 'reciept',
+    component: RecieptComponent,
   },
   {
     path: '**',
